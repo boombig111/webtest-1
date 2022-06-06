@@ -1,0 +1,645 @@
+html {
+    height: 100%;
+}
+
+* {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Koulen','Lato', sans-serif; 
+    font-size: 15px;
+    background-color: rgba(240, 233, 233, 0.973);
+    letter-spacing: 1.5px;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(233, 143, 162);
+    height: 8%;
+    /* max-height: 80px;  */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+    transition: 0.7s ease;
+    gap: 20px;
+}
+
+.container a:hover {
+    color: white;    
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.schedule-buttons-section {
+    position: relative;
+    left: 42.5%;
+}
+
+.schedule-buttons {
+    position: relative;
+    background-color: white;
+    border: solid rgb(233, 143, 162);
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 30px 0 0 0;
+}
+
+.table-section {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    max-width: 70%;
+    /* width: 1100px; */
+    margin-left: 15%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+.league {
+    padding: 1% 0 3% 3%;
+}
+
+thead tr {
+    border-bottom: solid 1px;
+}
+
+tbody {
+    border-bottom: solid 1px;
+}
+
+.match-row {
+    width: 17%;
+    /* width: 158px; */
+    /* text-align: right; */
+}
+
+.team-logo-row {
+    width: 3%;
+    /* width: 30px; */
+}  
+
+.result-row {
+    width: 6%;
+    justify-content: center;
+    /* width: 70px; */
+}
+
+.match-row-2 {
+    width: 17%;
+    /* width: 228px; */
+}
+
+.time-row {
+    width: 12%;
+    /* width: 105px; */
+}
+
+.location-row {
+    width: 45%;
+    /* width: 512px; */
+}
+
+.odd {
+    background-color: white;
+}
+
+.even {
+    background-color: rgb(243, 240, 240);
+}
+
+a {
+    text-decoration: none;
+}
+
+.team-name {
+    display: block;
+    color: rgb(10, 57, 87);
+    padding: 0 5% 0 0;
+    margin: 0;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.match-1 {
+    text-align: right;
+}
+
+.team-logo {
+    bottom: 5px;
+}
+
+.team-logo img {
+    align-items: center;
+}
+
+.result {
+    vertical-align: middle;
+}
+
+.result span {
+    display: block;
+    color: rgb(10, 57, 87);
+    font-size: 15px;
+    padding: 0 1% 0 2%;
+    /* padding: 0 10px 0 20px; */
+    text-align: center;
+}
+
+.match-right h2 a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.team-name-right {
+    color: rgb(10, 57, 87);
+    padding: 0 0 0 5px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.wrapper {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.time-wrapper a {
+    font-size: 15px;
+    color: rgb(10, 57, 87);
+    padding-left: 45%;
+}
+
+.location-wrapper {
+    font-size: 15px;
+    padding-left: 44%;
+}
+
+.location {
+    color: rgb(10, 57, 87);
+}
+
+.no-match-section {
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 2%;
+    display: block;
+}
+
+.no-match-section h2 {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(233, 143, 162);
+    margin-top: auto;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.footer-item {
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.footer-item a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.footer-item-logo {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer-item-logo a {
+    color: rgb(0, 0, 0);
+}
+@media screen and (max-width:799px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    table {
+        table-layout: fixed;
+    }
+
+    .team-name-right {
+        color: rgb(10, 57, 87);
+        padding: 0 0 0 5px;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed; 
+        top: -150%;
+        left: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(235, 162, 178);
+        width: 100%;
+        transition: 0.4s;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .nav-item{
+        padding-right:14%;
+        margin: 5px 0;
+    }
+
+    .nav-menu.active {
+        top: 3%;
+    }
+
+    .logo a {
+        font-size: 22px;
+    }
+
+    .schedule-buttons-section {
+        left: 20%;
+    }
+
+    .schedule-buttons {
+        height: 10%;
+        width: 20%;
+        font-size: 11px;
+    }
+
+    .league img {
+        width: 9%;
+    }
+
+    .team-name {
+        font-size: 11px;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .match-row {
+        width: 10%;
+    }
+
+    .match-row img {
+        width: 13%;
+    }
+
+    .team-logo {
+        width: 5%;
+    }
+
+    .team-logo img {
+        width: 55%;
+    }
+
+    .time-row img {
+        width: 10%;
+    }
+
+    .result-row {
+        width: 10%;
+    }
+
+    .result h4 {
+        font-size: 80%;
+    }
+
+    .team-logo-right img {
+        width: 17%;
+    }
+
+    .team-name-right {
+        width: 50%;
+    }
+
+    .match-row-2 {
+        width: 10%;
+    }
+
+    .time-wrapper {
+        padding-left: 20%;
+    }
+
+    .time-wrapper a {
+        font-size: 11px;
+        padding-left: 5%;
+    }
+
+    .location-row-team {
+        display: none;
+    }
+
+    .location-row {
+        display: none;
+    }
+    .league {
+        width: 80%;
+    }
+    .footer-item a {
+        font-size: 15px;
+    }
+    .footer-item-logo {
+        font-size: 21px;
+    }
+    
+}
+
+/* @media screen and (min-width:800px) and (max-width:1380px) {
+
+    .schedule-buttons-section {
+        left: 20%;
+    }
+
+    .schedule-buttons {
+        height: 10%;
+        width: 20%;
+        font-size: 100%;
+    }
+    .logo a {
+        font-size: 22px;
+    }
+} */
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+
+    table {
+        table-layout: fixed;
+    }
+    
+    .location-row-team {
+        display: none;
+    }
+
+    .location-row {
+        display: none;
+    }
+    .schedule-buttons-section {
+        left: 20%;
+    }
+
+    .schedule-buttons {
+        height: 10%;
+        width: 20%;
+        font-size: 100%;
+    }
+    .logo a {
+        font-size: 22px;
+    }
+    
+    .footer-item a {
+        font-size: 15px;
+    }
+    
+    .footer-item-logo {
+        font-size: 21px;
+    }
+}
+/* @media screen and (min-width:799px) { */
+    
+
+    /* table {
+        table-layout: fixed;
+    } */
+    /* .team-name {
+        text-align: right;
+        font-size: 80%;
+    }
+    .league {
+        width: 80%;
+    }
+    .team-name-right {
+        font-size: 80%;
+        width: 50%;
+    }
+    .result h4 {
+        font-size: 90%  ;
+    }
+    .time-wrapper a {
+        font-size: 80%;
+    }
+    .match-row {
+        font-size: 120%;
+    }
+    .match-row img {
+        width: 15%;
+    }
+    .time-row {
+        font-size: 120%;
+    }
+    .time-row img {
+        width: 15%;
+    }
+} */
+
+@media  screen and (min-width:376px) and (max-width:600px) {
+    .team-logo img {
+        width: 20px;
+    }
+    .team-logo-right img {
+        width: 20px;
+    }
+    .match-row img {
+        width: 12px;
+    }
+    .time-row img {
+        width: 12px;
+    }
+    .schedule-buttons {
+        height: 10%;
+        width: 20%;
+        font-size: 91%;
+    }
+    .footer-item a {
+        font-size: 11px;
+        margin: 5px;
+    }
+    
+    .footer-item-logo {
+        font-size: 13px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    .bar {
+        width: 15px;
+        height: 2px;
+        margin: 2px auto;
+    }
+    .nav-item a{
+        font-size: 12px;
+        padding-right: 0%;
+        margin: 5px 0;
+    }
+
+    .nav-menu.active {
+        top: 3%;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(3.9px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-3.9px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .footer-item a {
+        font-size: 11px;
+        margin: 5px;
+    }
+    
+    .footer-item-logo {
+        font-size: 13px;
+    }
+
+    .nav-item{
+        padding-right: 21%;
+        margin: 5px 0;
+    }
+
+    table {
+        table-layout: fixed;
+    }
+
+    .bar {
+        width: 15px;
+        height: 2px;
+        margin: 2px auto;
+    }
+    .logo a {
+        font-size: 15px;
+    }
+    .team-name {
+        font-size: 11px;
+    }
+    .team-logo-right {
+        font-size: 20%;
+    }
+    .schedule-buttons {
+        height: 10%;
+        width: 20%;
+        font-size: 91%;
+    }
+    .match-row-2 {
+        width: 12%;
+    }
+    .match-row {
+        width: 12%  ;
+    }
+    .team-logo img {
+        width: 100%;
+    }
+    .team-logo-right img {
+        width: 30%;
+    }
+
+    .match-row img {
+        width: 12px;
+    }
+    .time-row img {
+        width: 12px;
+    }
+    .league {
+        font-size: 12px;
+    }
+
+    .nav-item a{
+        font-size: 12px;
+        padding-right: 0%;
+        margin: 5px 0;
+    }
+
+    .nav-menu.active {
+        top: 3%;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(3.9px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-3.9px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width:280px) {
+
+    .schedule-buttons {
+        height: 10px;
+        width: 70px;
+        font-size: 80%;
+        margin-right: 10%;
+    }
+}
